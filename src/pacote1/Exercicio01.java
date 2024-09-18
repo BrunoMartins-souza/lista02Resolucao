@@ -1,4 +1,7 @@
-package pacote2;
+//Crie um programa que imprima a sequência dos 100 próximos números inteiros, seguintes a um
+//valor fornecido pela pessoa utilizadora.
+
+package pacote1;
 import java.util.Scanner;
 
 public class Exercicio01 {
