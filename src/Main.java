@@ -4,6 +4,7 @@ import java.util.Scanner;
 import pacote1.Exercicio01;
 import pacote1.Exercicio02;
 import pacote1.Exercicio03;
+import pacote1.Exercicio04;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +26,10 @@ public class Main {
                 case 3:
                     Exercicio03 e03 = new Exercicio03();
                     e03.exercicio03();
+                break;
+                case 4:
+                    Exercicio04 e04 = new Exercicio04();
+                    e04.exercicio04();
                 break;
 
 
