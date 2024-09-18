@@ -10,6 +10,15 @@ public class Main {
 
         System.out.print("Escolha uma opção: ");
         opc = input.nextInt();
+
+        switch (opc) {
+            case 1:
+                for (int i = 0; i < 100; i++){}
+                break;
         
+            default:
+                break;
+        }
+
     }
 }
