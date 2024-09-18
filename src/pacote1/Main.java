@@ -2,22 +2,25 @@ package pacote1;
 
 import java.util.Scanner;
 
+import pacote2.Exercicio01;
+
 public class Main {
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
+        try (Scanner input = new Scanner(System.in)) {
+            int opc;
 
-        int opc;
+            System.out.print("Escolha uma opção: ");
+            opc = input.nextInt();
 
-        System.out.print("Escolha uma opção: ");
-        opc = input.nextInt();
-
-        switch (opc) {
-            case 1:
-                for (int i = 0; i < 100; i++){}
-                break;
-        
-            default:
-                break;
+            switch (opc) {
+                case 1:
+                    Exercicio01 e01 = new Exercicio01();
+                    e01.exercio01();
+                    break;
+            
+                default:
+                    break;
+            }
         }
 
     }
