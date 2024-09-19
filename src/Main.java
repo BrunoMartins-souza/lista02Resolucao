@@ -6,6 +6,7 @@ import pacote1.Exercicio02;
 import pacote1.Exercicio03;
 import pacote1.Exercicio04;
 import pacote1.Exercicio05;
+import pacote1.Exercicio06;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,6 +36,10 @@ public class Main {
                 case 5:
                     Exercicio05 e05 = new Exercicio05();
                     e05.exercicio05();
+                break;
+                case 6:
+                    Exercicio06 e06 = new Exercicio06();
+                    e06.exercicio06();
                 break;
 
 
