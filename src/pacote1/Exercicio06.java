@@ -14,8 +14,8 @@ package pacote1;
 import java.util.Scanner;
 
 public class Exercicio06 {
-    public void exercicio06(){
-        try (Scanner input = new Scanner(System.in)){
+    public void exercicio06() {
+        try (Scanner input = new Scanner(System.in)) {
 
             int kills = 0;
             int deaths = 0;
@@ -49,10 +49,11 @@ public class Exercicio06 {
                 if (totalAssists >= 20) {
                     System.out.println("team work");
                 }
-                //input.skip("[\r\n]");
+                // input.skip("[\r\n]");
+                input.nextLine();
+
                 System.out.println("Há um vencedor? (s/n) ");
                 resposta = input.nextLine();
-                
 
                 if (resposta.equalsIgnoreCase("s")) {
                     vencedor = true;
