@@ -1,5 +1,6 @@
 
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 import pacote1.Exercicio01;
 import pacote1.Exercicio02;
@@ -15,17 +16,23 @@ public class Main {
             int opc = 0;
 
             do{
-                System.out.println("Escolha um exercicio para mostrar a resolução: ");
-                System.out.println("1 - Exercício 01 ");
-                System.out.println("2 - Exercício 02 ");
-                System.out.println("3 - Exercício 03 ");
-                System.out.println("4 - Exercício 04 ");
-                System.out.println("5 - Exercício 05 ");
-                System.out.println("6 - Exercício 06 ");
-                System.out.println("7 - Exercício 07 ");
-                System.out.println("8 - Sair. ");
-                opc = input.nextInt();
-                //input.skip("[\r\n]");
+                try {
+                    
+                    System.out.println("Escolha um exercicio para mostrar a resolução: ");
+                    System.out.println("1 - Exercício 01 ");
+                    System.out.println("2 - Exercício 02 ");
+                    System.out.println("3 - Exercício 03 ");
+                    System.out.println("4 - Exercício 04 ");
+                    System.out.println("5 - Exercício 05 ");
+                    System.out.println("6 - Exercício 06 ");
+                    System.out.println("7 - Exercício 07 ");
+                    System.out.println("8 - Sair. ");
+                    opc = input.nextInt();
+                    //input.skip("[\r\n]");
+
+                } catch (InputMismatchException erro) {
+                    System.out.println("Digite uma das opções acima: ");
+                }
 
                 switch (opc) {
                     case 1:
