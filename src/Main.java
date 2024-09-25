@@ -9,29 +9,29 @@ import pacote1.Exercicio06;
 import pacote1.Exercicio07;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
+
             int opc;
 
             do{
-      			
-                System.out.println("Escolha um exercicio para mostrar a resolução: ");
-                System.out.println("1 - Exercício 01 ");
-                System.out.println("2 - Exercício 02 ");
-                System.out.println("3 - Exercício 03 ");
-                System.out.println("4 - Exercício 04 ");
-                System.out.println("5 - Exercício 05 ");
-                System.out.println("6 - Exercício 06 ");
-                System.out.println("7 - Exercício 07 ");
-                System.out.println("8 - Sair. ");
-              	System.out.println();
+                System.out.println("Escolha uma opção para mostrar o resultado do exercício: ");
+                System.out.println(" 1 - Exercício 01");
+                System.out.println(" 2 - Exercício 02");
+                System.out.println(" 3 - Exercício 03");
+                System.out.println(" 4 - Exercício 04");
+                System.out.println(" 5 - Exercício 05");
+                System.out.println(" 6 - Exercício 06");
+                System.out.println(" 7 - Exercício 07");
+                System.out.println(" 8 - Sair.");
+                //input.skip("[\r\n]");
                 opc = input.nextInt();
                 //input.skip("[\r\n]");
-
+                
                 switch (opc) {
                     case 1:
                         Exercicio01 e01 = new Exercicio01();
-                        e01.exercio01();
+                        e01.exercicio01();
                         break;
                     case 2:
                         Exercicio02 e02 = new Exercicio02();
@@ -60,15 +60,14 @@ public class Main {
                     case 8:
                         System.out.println("Saindo do programa...");
                         break;
+                
                     default:
                         System.out.println("Opção inválida. Escolha um número entre 1 e 8.");
                         break;
                 }
-
-               System.out.println();
-
-            }while (opc != 8);
-
+                input.skip("[\r\n]");
+            }while(opc != 8);
         input.close();
     }
 }
+       

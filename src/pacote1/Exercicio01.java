@@ -5,7 +5,7 @@ package pacote1;
 import java.util.Scanner;
 
 public class Exercicio01 {
-    public void exercio01() {
+    public void exercicio01() {
         Scanner input = new Scanner(System.in);
             int valor01;
 
