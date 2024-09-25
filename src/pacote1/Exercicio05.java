@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Exercicio05 {
     public void exercicio05() {
-        try (Scanner input = new Scanner(System.in)) {
+        Scanner input = new Scanner(System.in);
 
             int idade;
             Double altura, peso;
@@ -57,7 +57,7 @@ public class Exercicio05 {
             porcentagemPesoMenor40 = (pesoMenor40 * 100.0) / totalPessoas;
             System.out.println("Porcentagem de pessoass com peso inferior a 40 kg: " + porcentagemPesoMenor40 + "%");
 
-        }
+        input.close();
 
     }
 }

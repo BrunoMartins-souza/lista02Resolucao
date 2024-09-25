@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Exercicio02 {
     public void exercicio02(){
 
-        try (Scanner input = new Scanner(System.in)){
+        Scanner input = new Scanner(System.in);
 
             Double numA;
             int numB;
@@ -28,7 +28,7 @@ public class Exercicio02 {
             }
 
             System.out.println("O produto de " + numA + " por " + numB + " é: " + resultado);
-        }
+        input.close();
     }
 
     

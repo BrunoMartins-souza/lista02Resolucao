@@ -15,7 +15,7 @@ import java.util.Scanner;
 
 public class Exercicio06 {
     public void exercicio06() {
-        try (Scanner input = new Scanner(System.in)) {
+        Scanner input = new Scanner(System.in);
 
             int kills = 0;
             int deaths = 0;
@@ -61,7 +61,6 @@ public class Exercicio06 {
             }
 
             System.out.println("O jogo terminou! Um vencedor foi definido.");
-
-        }
+        input.close();
     }
 }

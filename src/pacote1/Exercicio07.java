@@ -40,7 +40,7 @@ import java.util.Scanner;
 
 public class Exercicio07 {
     public void exercicio07() {
-        try (Scanner input = new Scanner(System.in)) {
+        Scanner input = new Scanner(System.in);
 
             int opc;
             int n;
@@ -112,7 +112,7 @@ public class Exercicio07 {
                 break;
                 default:
                     System.out.println("Opção inválida.");
-            }   
-        }   
+            }
+        input.close();      
     }
 }

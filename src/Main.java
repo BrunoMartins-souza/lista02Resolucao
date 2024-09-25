@@ -1,6 +1,4 @@
-
 import java.util.Scanner;
-import java.util.InputMismatchException;
 
 import pacote1.Exercicio01;
 import pacote1.Exercicio02;
@@ -13,26 +11,22 @@ import pacote1.Exercicio07;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-            int opc = 0;
+            int opc;
 
             do{
-                try {
-                    
-                    System.out.println("Escolha um exercicio para mostrar a resolução: ");
-                    System.out.println("1 - Exercício 01 ");
-                    System.out.println("2 - Exercício 02 ");
-                    System.out.println("3 - Exercício 03 ");
-                    System.out.println("4 - Exercício 04 ");
-                    System.out.println("5 - Exercício 05 ");
-                    System.out.println("6 - Exercício 06 ");
-                    System.out.println("7 - Exercício 07 ");
-                    System.out.println("8 - Sair. ");
-                    opc = input.nextInt();
-                    //input.skip("[\r\n]");
-
-                } catch (InputMismatchException erro) {
-                    System.out.println("Digite uma das opções acima: ");
-                }
+      			
+                System.out.println("Escolha um exercicio para mostrar a resolução: ");
+                System.out.println("1 - Exercício 01 ");
+                System.out.println("2 - Exercício 02 ");
+                System.out.println("3 - Exercício 03 ");
+                System.out.println("4 - Exercício 04 ");
+                System.out.println("5 - Exercício 05 ");
+                System.out.println("6 - Exercício 06 ");
+                System.out.println("7 - Exercício 07 ");
+                System.out.println("8 - Sair. ");
+              	System.out.println();
+                opc = input.nextInt();
+                //input.skip("[\r\n]");
 
                 switch (opc) {
                     case 1:
@@ -71,14 +65,10 @@ public class Main {
                         break;
                 }
 
-                System.out.println();
+               System.out.println();
 
             }while (opc != 8);
 
         input.close();
-
-        
-
     }
 }
-

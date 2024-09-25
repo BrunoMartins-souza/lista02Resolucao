@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Exercicio01 {
     public void exercio01() {
-        try (Scanner input = new Scanner(System.in)) {
+        Scanner input = new Scanner(System.in);
             int valor01;
 
             System.out.println("Digite um número: ");
@@ -16,7 +16,7 @@ public class Exercicio01 {
                 valor01 = valor01 + 1;
                 System.out.println(i + 1 + "° = " + valor01);
             }
-        }
+        input.close();
 
     }
 

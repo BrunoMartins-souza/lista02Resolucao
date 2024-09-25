@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Exercicio04 {
     public void exercicio04(){
-        try (Scanner input = new Scanner(System.in)){
+        Scanner input = new Scanner(System.in);
 
             int numero;
             int somaPares = 0;
@@ -36,6 +36,6 @@ public class Exercicio04 {
                 System.out.println("Não foram inseridos números ímpares.");
             }
 
-        }
+        input.close();
     }
 }

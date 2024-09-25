@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Exercicio03 {
     public void exercicio03() {
-        try (Scanner input = new Scanner(System.in)) {
+        Scanner input = new Scanner(System.in);
 
             int tempo;
             Double massa;
@@ -28,7 +28,7 @@ public class Exercicio03 {
             
 
 
-        }
+        input.close();
 
     }
 
