@@ -113,7 +113,6 @@ public class Exercicio07 {
             default:
                 System.out.println("Opção inválida.");
             break;
-        }
-             
+        }        
     }
 }

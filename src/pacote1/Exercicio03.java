@@ -26,5 +26,4 @@ public class Exercicio03 {
         System.out.println("O tempo necessário para a massa se tornar menor que 0,10 é: " + tempo + " segundos.");
 
     }
-
 }

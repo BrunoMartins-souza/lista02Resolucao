@@ -35,6 +35,5 @@ public class Exercicio04 {
         }else{
             System.out.println("Não foram inseridos números ímpares.");
         }
-
     }
 }

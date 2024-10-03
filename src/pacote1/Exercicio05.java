@@ -57,7 +57,5 @@ public class Exercicio05 {
         porcentagemPesoMenor40 = (pesoMenor40 * 100.0) / totalPessoas;
         System.out.println("Porcentagem de pessoass com peso inferior a 40 kg: " + porcentagemPesoMenor40 + "%");
 
-        
-
     }
 }
