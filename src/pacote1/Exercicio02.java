@@ -10,25 +10,25 @@ public class Exercicio02 {
 
         Scanner input = new Scanner(System.in);
 
-            Double numA;
-            int numB;
-            Double resultado = 0.0;
+        Double numA;
+        int numB;
+        Double resultado = 0.0;
 
-            System.out.print("Digite um número real (A): ");
-            numA = input.nextDouble();
-            System.out.println("Digite um número inteiro (B): ");
-            numB = input.nextInt();
+        System.out.print("Digite um número real (A): ");
+        numA = input.nextDouble();
+        System.out.println("Digite um número inteiro (B): ");
+        numB = input.nextInt();
 
-            for(int i = 0; i < Math.abs(numB); i++){
-                resultado += numA;
-            }
+        for(int i = 0; i < Math.abs(numB); i++){
+            resultado += numA;
+        }
 
-            if (numB < 0){
-                resultado = -resultado;
-            }
+        if (numB < 0){
+            resultado = -resultado;
+        }
 
-            System.out.println("O produto de " + numA + " por " + numB + " é: " + resultado);
-        input.close();
+        System.out.println("O produto de " + numA + " por " + numB + " é: " + resultado);
+        
     }
 
     

@@ -17,50 +17,50 @@ public class Exercicio06 {
     public void exercicio06() {
         Scanner input = new Scanner(System.in);
 
-            int kills = 0;
-            int deaths = 0;
-            int assists = 0;
-            int totalKills = 0;
-            int totalDeaths = 0;
-            int totalAssists = 0;
-            String resposta;
-            boolean vencedor = false;
+        int kills = 0;
+        int deaths = 0;
+        int assists = 0;
+        int totalKills = 0;
+        int totalDeaths = 0;
+        int totalAssists = 0;
+        String resposta;
+        boolean vencedor = false;
 
-            while (!vencedor) {
-                System.out.println("Digite o número de kills da rodada: ");
-                kills = input.nextInt();
-                System.out.println("Digite o número de deathss da rodada: ");
-                deaths = input.nextInt();
-                System.out.println("Digite o número de assists da rodada: ");
-                assists = input.nextInt();
+        while (!vencedor) {
+            System.out.println("Digite o número de kills da rodada: ");
+            kills = input.nextInt();
+            System.out.println("Digite o número de deathss da rodada: ");
+            deaths = input.nextInt();
+            System.out.println("Digite o número de assists da rodada: ");
+            assists = input.nextInt();
 
-                totalKills += kills;
-                totalDeaths += deaths;
-                totalAssists += assists;
+            totalKills += kills;
+            totalDeaths += deaths;
+            totalAssists += assists;
 
-                if (totalKills <= 5) {
-                    System.out.println("noob");
-                } else if (totalKills >= 20) {
-                    System.out.println("master");
-                }
-                if (totalDeaths >= 20) {
-                    System.out.println("Houston, we have a problem");
-                }
-                if (totalAssists >= 20) {
-                    System.out.println("team work");
-                }
-                // input.skip("[\r\n]");
-                input.nextLine();
-
-                System.out.println("Há um vencedor? (s/n) ");
-                resposta = input.nextLine();
-
-                if (resposta.equalsIgnoreCase("s")) {
-                    vencedor = true;
-                }
+            if (totalKills <= 5) {
+                System.out.println("noob");
+            } else if (totalKills >= 20) {
+                System.out.println("master");
             }
+            if (totalDeaths >= 20) {
+                System.out.println("Houston, we have a problem");
+            }
+            if (totalAssists >= 20) {
+                System.out.println("team work");
+            }
+            // input.skip("[\r\n]");
+            input.nextLine();
 
-            System.out.println("O jogo terminou! Um vencedor foi definido.");
-        input.close();
+            System.out.println("Há um vencedor? (s/n) ");
+            resposta = input.nextLine();
+
+            if (resposta.equalsIgnoreCase("s")) {
+                vencedor = true;
+            }
+        }
+
+        System.out.println("O jogo terminou! Um vencedor foi definido.");
+       
     }
 }

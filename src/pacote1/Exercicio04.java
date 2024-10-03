@@ -9,33 +9,32 @@ public class Exercicio04 {
     public void exercicio04(){
         Scanner input = new Scanner(System.in);
 
-            int numero;
-            int somaPares = 0;
-            int produtoImpares = 1;
-            boolean temImpares = false;
+        int numero;
+        int somaPares = 0;
+        int produtoImpares = 1;
+        boolean temImpares = false;
 
-            while (true) {
-                System.out.println("Digite um número inteiro positivo (ou um número negativo para sair): ");
-                numero = input.nextInt();
+        while (true) {
+            System.out.println("Digite um número inteiro positivo (ou um número negativo para sair): ");
+            numero = input.nextInt();
 
-                if (numero < 0) {
-                    break;
-                }
-                if (numero % 2 == 0) {
-                    somaPares += numero;
-                }else{
-                    produtoImpares *= numero;
-                    temImpares = true;
-                }
+            if (numero < 0) {
+                break;
             }
-
-            System.out.println("A soma dos números pares é: " + somaPares);
-            if (temImpares) {
-                System.out.println("O produto dos números ímpares é: " + produtoImpares);
+            if (numero % 2 == 0) {
+                somaPares += numero;
             }else{
-                System.out.println("Não foram inseridos números ímpares.");
+                produtoImpares *= numero;
+                temImpares = true;
             }
+        }
 
-        input.close();
+        System.out.println("A soma dos números pares é: " + somaPares);
+        if (temImpares) {
+            System.out.println("O produto dos números ímpares é: " + produtoImpares);
+        }else{
+            System.out.println("Não foram inseridos números ímpares.");
+        }
+
     }
 }

@@ -7,16 +7,15 @@ import java.util.Scanner;
 public class Exercicio01 {
     public void exercicio01() {
         Scanner input = new Scanner(System.in);
-            int valor01;
+        int valor01;
 
-            System.out.println("Digite um número: ");
-            valor01 = input.nextInt();
+        System.out.println("Digite um número: ");
+        valor01 = input.nextInt();
 
-            for(int i = 0; i < 100; i++){
-                valor01 = valor01 + 1;
-                System.out.println(i + 1 + "° = " + valor01);
-            }
-        input.close();
+        for(int i = 0; i < 100; i++){
+            valor01 = valor01 + 1;
+            System.out.println(i + 1 + "° = " + valor01);
+        }
 
     }
 
